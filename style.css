@@ -1,0 +1,194 @@
+/* global rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body {
+    font-family: 'Lexend Deca', sans-serif;
+}
+.cards-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+@media (max-width: 1010px) {
+    .cards-container {
+        margin-top: 310px;
+    }
+}   
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,calc(1000px / 3));
+    grid-template-rows: 500px;
+}
+@media (max-width: 1010px) {
+    .container {
+        display: grid;
+        grid-template-columns:300px;
+        grid-template-rows: repeat(3,calc(1300px / 3));
+        justify-content: center;
+    }
+}
+button {
+    cursor: pointer;
+    border: none;
+    width: 130px;
+    padding: 10px 5px;
+    height: 40px;
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+    -ms-transition: .1s;
+    -o-transition: .1s;
+}
+@media (max-width: 1010px) {
+    button {
+        margin-bottom: -35px;
+    }
+}
+/* end global rules */
+
+/* card 1  */
+
+.card-1 {
+    padding: 30px 0px 30px 40px;
+    background: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    /* box-shadow: 0 0 0 0 red; */
+}
+@media (max-width: 1010px) {
+    .card-1 {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+}
+.logo {
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 32px;
+}
+.text {
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 32px;
+}
+.text h1 {
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 30px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+}
+.text p {
+    margin-top: 10px;
+    color:  hsla(0, 0%, 100%, 0.75);
+    width: 192px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+@media (max-width: 1010px) {
+    .text p {
+        width: 180px;
+    }
+}
+.card-1 button {
+    color: hsl(31, 77%, 52%);
+    font-weight: 700;
+    position: absolute;
+    bottom: 70px;
+    margin-left: 15px;
+}
+.card-1 button:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    background: none;
+}
+
+/* card 2 */
+
+.card-2 {
+    padding: 30px 0px 30px 40px;
+    background: hsl(184, 100%, 22%);
+    position: relative;
+}
+.card-2 button {
+    color: hsl(184, 100%, 22%);
+    font-weight: 700;
+    position: absolute;
+    bottom: 70px;
+    margin-left: 15px;
+}
+.card-2 button:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    background: none;
+}
+
+/* card 3 */
+
+.card-3 {
+    padding: 30px 0px 30px 40px;
+    background: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+}
+@media (max-width: 1010px) {
+    .card-3 {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+}
+.card-3 button {
+    color: hsl(179, 100%, 13%);
+    font-weight: 700;
+    position: absolute;
+    bottom: 70px;
+    margin-left: 15px;
+}
+.card-3 button:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    background: none;
+}
+.attribution {
+    position: absolute;
+    left: 50%;
+    bottom: 68px;
+    transform: translate(-50%,-50%);
+    /* -webkit-transform: translate(-50%,-50%); */
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    font-size: 15px;
+    width: 436px;
+}
+@media (max-width: 1010px) {
+    .attribution {
+    position: absolute;
+    left: 50%;
+    bottom: -645px;
+    transform: translate(-50%,-50%);
+    /* -webkit-transform: translate(-50%,-50%); */
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    font-size: 13px;
+    width: 194px;
+    }
+}
